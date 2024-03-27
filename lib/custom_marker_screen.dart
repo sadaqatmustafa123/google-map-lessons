@@ -73,6 +73,10 @@ class _CustomMarkerScreenState extends State<CustomMarkerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.amber,
+        title: Text('Custom Markers GoogleMap'),
+      ),
       body: SafeArea(
         child: GoogleMap(
           initialCameraPosition: _kGooglePlex,
