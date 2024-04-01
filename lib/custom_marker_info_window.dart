@@ -18,7 +18,7 @@ class _CustomMarkerInfoWindowScreenState
     extends State<CustomMarkerInfoWindowScreen> {
   CustomInfoWindowController _customInfoWindowController =
       CustomInfoWindowController();
-  final LatLng _latLng = LatLng(33.6844, 73.0479);
+  final LatLng _latLng = const LatLng(33.6844, 73.0479);
   final double _zoom = 15.0;
   Set<Marker> _markers = {};
 
@@ -61,8 +61,8 @@ class _CustomMarkerInfoWindowScreenState
 
       if (i == 1) {
         _markers.add(Marker(
-            markerId: MarkerId('2'),
-            position: LatLng(33.6992, 72.9744),
+            markerId: const MarkerId('2'),
+            position: const LatLng(33.6992, 72.9744),
             icon: BitmapDescriptor.fromBytes(markerIcon),
             onTap: () {
               _customInfoWindowController.addInfoWindow!(
@@ -79,12 +79,12 @@ class _CustomMarkerInfoWindowScreenState
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.account_circle,
                                 color: Colors.white,
                                 size: 30,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8.0,
                               ),
                               Text(
@@ -113,13 +113,13 @@ class _CustomMarkerInfoWindowScreenState
                     // ),
                   ],
                 ),
-                LatLng(33.6992, 72.9744),
+                const LatLng(33.6992, 72.9744),
               );
             }));
       } else {
         _markers.add(Marker(
             markerId: MarkerId(i.toString()),
-            position: LatLng(33.6844, 73.0479),
+            position: const LatLng(33.6844, 73.0479),
             icon: BitmapDescriptor.fromBytes(markerIcon),
             onTap: () {
               _customInfoWindowController.addInfoWindow!(
@@ -183,7 +183,7 @@ class _CustomMarkerInfoWindowScreenState
                     ],
                   ),
                 ),
-                LatLng(33.6844, 73.0479),
+                const LatLng(33.6844, 73.0479),
               );
             }));
       }
@@ -197,7 +197,7 @@ class _CustomMarkerInfoWindowScreenState
     // loadData() ;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Custom Info Window Example'),
+        title: const Text('Custom Info Window Example'),
         backgroundColor: Colors.red,
       ),
       body: Stack(

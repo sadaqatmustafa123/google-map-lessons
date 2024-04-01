@@ -69,6 +69,8 @@ flutter:
   assets:
     - assets/images/
     - assets/theme/silver_theme.json
+    - assets/theme/retro_theme.json
+    - assets/theme/night_theme.json
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
