@@ -48,7 +48,7 @@ class _PolygoneScreenState extends State<PolygoneScreen> {
       ),
       body: GoogleMap(
         initialCameraPosition: _kGooglePlex,
-        mapType: MapType.normal,
+        mapType: MapType.terrain,
         myLocationButtonEnabled: true,
         polygons: _polygon,
         myLocationEnabled: true,
